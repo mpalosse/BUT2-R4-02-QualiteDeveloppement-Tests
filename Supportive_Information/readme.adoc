@@ -1,0 +1,42 @@
+== La ressource "Qualité de développement au S4"
+
+=== Compétences ciblées
+
+* Développer — c’est-à-dire concevoir, coder, tester et intégrer — une solution informatique pour un client.
+* Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles
+
+
+=== SAÉ au sein de laquelle la ressource peut être mobilisée et combinée
+
+* SAÉ 4.Real.01 | Développement d’une application complexe
+
+
+=== Descriptif
+L’objectif de cette ressource est d’approfondir la production de tests, mais également d’identifier les critères de faisabilité d’un projet informatique.
+
+
+=== Savoirs de référence étudiés
+
+* Problématique de la non régression
+* Tests d’intégration
+
+=== Prolongements suggérés
+
+* Tests d’utilisabilité
+* Tests fonctionnels
+* Continuous Integration / Continuous Delivery
+* Test UI
+* Couvertures de tests
+
+
+=== Apprentissages critiques ciblés
+
+* AC21.04 | Vérifier et valider la qualité de l’application par les tests
+* AC25.03 | Identifier les critères de faisabilité d’un projet informatique
+
+=== Mots clés
+
+* Tests
+* Tests de non régression 
+* Tests d’intégration
+

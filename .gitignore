@@ -1,0 +1,6 @@
+.asciidoctor
+*.lock
+*.html
+*.slides.html
+*.pdf
+.DS_Store
