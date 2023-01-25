@@ -36,3 +36,5 @@ include::readme.adoc[]
 include::SI-001-Introduction-tests.adoc[]
 
 include::SI-002-Tests-unitaires.adoc[]
+
+include::SI-003-JUnit.adoc[]

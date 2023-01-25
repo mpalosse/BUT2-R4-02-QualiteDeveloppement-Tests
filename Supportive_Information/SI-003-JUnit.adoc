@@ -1,0 +1,158 @@
+== Introduction à JUnit 
+
+=== JUnit
+
+* Framework pour la construction et l'exécution de tests unitaires en Java.
+* https://github.com/junit-team/junit[Open Source]
+* Integration dans tous les éditeurs modernes (IntelliJ, Eclipse, VSCode) 
+* Intégration dans les outils de _build_ (Gradle, Maven)
+* Très massivement utilisé dans l'industrie
+
+=== Les bénéfices principaux
+
+* Facilités pour la coneption de tests unitaires
+* Lancement automatique des suites de tests
+* Génération de rapports d'executions
+
+=== Exemple de rapport généré dans IntelliJ
+
+.Rapport JUnit dans IntelliJ
+image::rapport-junit.png[Rapport JUnit dans IntelliJ]
+
+=== Exemple simple 
+
+* Une interface décrivant le comportement d'une pile
+* Une première implantation vide : `SimpleStack`
+* Une classe de test unitaire : `SimpleStackTest`
+
+=== L'interface `Stack`
+
+[source,Java]
+----
+public interface Stack {
+
+ /**
+ * Tests if this stack is empty
+ */
+ public boolean isEmpty();
+
+ /**
+ * Returns the number of items in this stack.
+ */
+ public int getSize();
+
+ /**
+ * Pushes an item onto the top of this stack.
+ * null item is allowed.
+ */
+ public void push(Item item);
+
+ /**
+ * Looks at the object at the top of this stack without removing it from the stack.
+ */
+ public Item peek() throws EmptyStackException;
+
+ /**
+ * Removes the object at the top of this stack and returns 
+ * that object as the value of this function.
+ * @throws EmptyStackException if this stack is empty.
+ */
+ public Item pop() throws EmptyStackException;
+
+ }
+----
+
+=== La classe `SimpleStack`
+
+[source,Java]
+----
+public class SimpleStack implements Stack {
+    
+   @Override
+   public boolean isEmpty() {
+   // TODO Auto-generated method stub
+   return false;
+   }
+    
+   @Override
+   public int getSize() {
+   // TODO Auto-generated method stub
+   return 0;
+   }
+    
+   @Override
+   public void push(Item item) {
+   // TODO Auto-generated method stub
+   }
+    
+   @Override
+   public Item peek() throws EmptyStackException {
+   // TODO Auto-generated method stub
+   return null;
+   }
+    
+   @Override
+   public Item pop() throws EmptyStackException {
+   // TODO Auto-generated method stub
+   return null;
+   }
+}
+----
+
+=== La classe `SimpleStackTest`
+
+[source,Java]
+----
+import static org.junit.Assert.*;
+import org.junit.Test;
+   
+public class SimpleStackTest { // Test class
+   
+  @Test
+  public void testCreateEmptyStack() { // Test case
+   
+  // When a freshly stack is created
+  Stack stack = new SimpleStack();
+   
+  // Then… (oracle)
+  assertTrue("A new stack should be empty", stack.isEmpty());
+  assertEquals("A new stack has no element", 0, stack.getSize());
+  }
+   
+  @Test
+  public void testPush() throws EmptyStackException {
+   
+  // Given an empty stack and an item
+  Stack stack = new SimpleStack();
+  Item item = new SimpleItem();
+   
+  // When the item is pushed in the stack
+  stack.push(item);
+   
+  // Then…
+  assertFalse("The stack must be not empty", stack.isEmpty());
+  assertEquals("The stack constains 1 item", 1, stack.getSize());
+  assertSame("The pushed item is on top of the stack", item, stack.peek());
+  }
+
+  @Test(expected = EmptyStackException.class)
+  public void testPopOnEmptyStack()  throws EmptyStackException {
+  // Given an empty stack
+  Stack stack = new SimpleStack();
+   
+  // When we « pop » the stack
+  stack.pop(); // should throws an EmptyStackException.
+  }
+}
+----
+
+=== Terminologie JUnit
+
+Classe de test:: contient plusieurs cas de test (sur la même classe)
+Méthode de test:: un scénario de test (sur une méthode)
+Assertion:: expression dont on veut vérifier la véracité
+Fixture:: construction d'un état commun à plusieurs cas de test
+Suite de test:: regroupement de classes de test qui peuvent être exécutées ensemble
+
+=== Assertions
+
