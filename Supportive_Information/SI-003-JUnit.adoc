@@ -156,3 +156,62 @@ Suite de test:: regroupement de classes de test qui peuvent être exécutées en
 
 === Assertions
 
+* Une assertion non satisfaite lève une exception
+
+[cols="1,1"]
+|===
+|Instruction | Description 
+
+|fail(message)
+|Déclenche un échec de la méthode de test
+
+|assertTrue([message], condition)
+|Teste si la condition est vraie
+
+|assertEquals([message], expected, actual)
+|Teste si les valeurs sont égales
+
+|assertSame([message], expected, actual)
+|Teste si les variables référencent le même objet
+
+|assertNotSame([message], expected, actual)
+|Teste si les variables ne référencent pas le même objet
+
+|assertNull([message], object)
+|Teste si l'objet est null
+
+|assertNotNull([message], object)
+|Teste si l'objet n'est pas null
+|=== 
+
+=== Annotations
+
+[cols="1,1"]
+|===
+|Annotation | Description 
+
+|@Test
+|Définit une méthode de test
+
+|@Before
+|Méthode exécutée avant chaque méthode de test
+
+|@After
+|Méthode exécutée après chaque méthode de test
+
+|@BeforeAll
+|Méthode exécutée avant la première méthode de test
+
+
+|@AfterAll
+|Méthode exécutée après la dernière méthode de test
+|===
+
+=== Conseils pratiques
+
+* Une classe de test par classe 
+** `<nomClasse>Test`
+* Une ou plusieurs méthodes de test par méthode de classe 
+** `test<nomMethode>[<cas>][<attendu>]`
+* Fichiers sources des classes de test séparés des fichiers sources des classes principales.
+** `/src/*` et `test/*` 
