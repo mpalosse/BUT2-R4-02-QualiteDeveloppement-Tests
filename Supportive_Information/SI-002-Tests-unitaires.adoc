@@ -77,3 +77,34 @@ image::coverage2.png[Couverture du code dans Intellij- détail pour une classe]
 * Plutôt que de _debugger_ à coup de _println_, évrivez un test !
 * Quand vous trouvez un _bug_, écrivez un test pour le reproduire et le caractériser
 
+== _Test Driven Development_ (TDD)
+
+=== Générlité sur le TDD
+
+* Conçu initialement par Erich Gamma et Kent beck.
+* Utilisation des tests unitaires comme spécification exécutable du code principal. 
+* S'intègre généralement dans les pratiques d'ingénierie d'approches agiles (eXtreme Programming, Scrum).
+* Plus qu'une approche pour écrire des tests, une approche de conception.
+
+=== Le cycle TDD
+
+.Le cycle TDD en image
+image::1226px-Cycle-global-tdd.png[Le cycle TDD en image]
+Par Xarawn — Travail personnel, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=44782737
+
+=== Le _refactoring_
+
+* Processus consistant à modifier la structure d'un code existant sans changer le comportement attendu.
+* Exemple de tâches de _refactoring_
+** Déplacer du code en vue de respecter une meilleure séparation des responsabilités
+** Suppression du code dupliqué
+** Renommer les noms de variables et méthodes avec des noms auto-documentés
+** Diviser les méthodes en plusieurs méthodes plus petites
+** Réorganiser les hiérarchies de classe
+
+=== Bénéfices du TDD
+
+* Force à penser les interfaces du programme : on les utilise dans les tests avant qu'elles soient implantées.
+* Induit une meilleure conception : meilleure modularisation induite par du code testable _by design_.
+* Construction simultanée du programme et de la suite de tests de non régression.
+* Pour en savoir davantage : https://en.wikipedia.org/wiki/Test-driven_development#Benefits[Bénéfices du TDD sur Wikipedia]
