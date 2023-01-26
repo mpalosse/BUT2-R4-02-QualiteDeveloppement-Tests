@@ -24,6 +24,7 @@ image::rapport-junit.png[Rapport JUnit dans IntelliJ]
 * Une interface décrivant le comportement d'une pile : ``Stack``
 * Une première implantation vide : ``SimpleStack``
 * Une classe de test unitaire : ``SimpleStackTest``
+* Code disponible sur https://github.com/MyPedagogicalRessources/SimpleStack[Github]
 
 === L'interface ``Stack``
 
