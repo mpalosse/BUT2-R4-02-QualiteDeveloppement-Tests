@@ -70,81 +70,87 @@ public class SimpleStack implements Stack {
     
    @Override
    public boolean isEmpty() {
-   // TODO Auto-generated method stub
    return false;
    }
     
    @Override
    public int getSize() {
-   // TODO Auto-generated method stub
    return 0;
    }
     
    @Override
    public void push(Item item) {
-   // TODO Auto-generated method stub
    }
     
    @Override
    public Item peek() throws EmptyStackException {
-   // TODO Auto-generated method stub
    return null;
    }
     
    @Override
    public Item pop() throws EmptyStackException {
-   // TODO Auto-generated method stub
    return null;
    }
 }
 ----
 
-=== La classe ``SimpleStackTest```
+=== La classe ``SimpleStackTest`` en JUnit5 1/2
 
 [source,Java]
 ----
-import static org.junit.Assert.*;
-import org.junit.Test;
-   
-public class SimpleStackTest { // Test class
-   
-  @Test
-  public void testCreateEmptyStack() { // Test case
-   
-  // When a freshly stack is created
-  Stack stack = new SimpleStack();
-   
-  // Then… (oracle)
-  assertTrue("A new stack should be empty", stack.isEmpty());
-  assertEquals("A new stack has no element", 0, stack.getSize());
-  }
-   
-  @Test
-  public void testPush() throws EmptyStackException {
-   
-  // Given an empty stack and an item
-  Stack stack = new SimpleStack();
-  Item item = new SimpleItem();
-   
-  // When the item is pushed in the stack
-  stack.push(item);
-   
-  // Then…
-  assertFalse("The stack must be not empty", stack.isEmpty());
-  assertEquals("The stack constains 1 item", 1, stack.getSize());
-  assertSame("The pushed item is on top of the stack", item, stack.peek());
-  }
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-  @Test(expected = EmptyStackException.class)
-  public void testPopOnEmptyStack()  throws EmptyStackException {
-  // Given an empty stack
-  Stack stack = new SimpleStack();
-   
-  // When we « pop » the stack
-  stack.pop(); // should throws an EmptyStackException.
-  }
+import static org.junit.jupiter.api.Assertions.*;
+
+@DisplayName("Test behaviour of a SimpleStack")
+class SimpleStackTest {
+
+    @Test // <1>
+    @DisplayName("Test the state of a newly created slack") // <2>
+    public void testCreateEmptyStack() { // Test case
+
+        // When a freshly stack is created
+        Stack stack = new SimpleStack();
+
+        // Then… (oracle)
+        assertTrue(stack.isEmpty(), "A new stack must be empty"); // <3>
+        assertEquals( 0, stack.getSize(), "A new stack has no element");
+    }
+    //…
 }
 ----
+<1> Identification d'une méthode de test
+<2> Spécification de l'affichage dans le rapport de test
+<3> Une assertion
+
+=== La classe ``SimpleStackTest`` en JUnit5 2/2
+
+[source,Java]
+----
+    //...
+    @Test
+    @Disabled // <1>
+    @DisplayName("Test limit when trying to pop an empty stack")
+    public void testPopOnEmptyStack()  {
+        // Given an empty stack
+        Stack stack = new SimpleStack();
+
+        // When we "pop" the stack, should throws an EmptyStackException.
+        //assertThrows(EmptyStackException.class, ()->stack.pop()); <3>
+        assertThrows(EmptyStackException.class, stack::pop, "EmptyStackException not thrown"); // <2>
+    }
+    // ...
+----
+<1> Permet de désactiver le test
+<2> Assertion spécifique pour tester une levée d'exception
+<3> Variante de l'assertion qui utilise une lambda expression
+
+=== La classe ``SimpleStackTest`` - rapport de test
+
+.Rapport de tests dans IntelliJ
+image::rapport-junit-failures.png[]
 
 === Terminologie JUnit
 
@@ -154,9 +160,9 @@ Assertion:: expression dont on veut vérifier la véracité
 Fixture:: construction d'un état commun à plusieurs cas de test
 Suite de test:: regroupement de classes de test qui peuvent être exécutées ensemble
 
-=== Assertions
+=== Assertions principales
 
-* Une assertion non satisfaite lève une exception
+Une assertion non satisfaite lève une Error.
 
 [cols="1,1"]
 |===
@@ -165,26 +171,29 @@ Suite de test:: regroupement de classes de test qui peuvent être exécutées en
 |fail(message)
 |Déclenche un échec de la méthode de test
 
-|assertTrue([message], condition)
+|assertTrue(condition, [message])
 |Teste si la condition est vraie
 
-|assertEquals([message], expected, actual)
+|assertEquals(expected, actual, [message])
 |Teste si les valeurs sont égales
 
-|assertSame([message], expected, actual)
+|assertSame(expected, actual, [message])
 |Teste si les variables référencent le même objet
 
-|assertNotSame([message], expected, actual)
+|assertNotSame(expected, actual, [message])
 |Teste si les variables ne référencent pas le même objet
 
-|assertNull([message], object)
+|assertNull(object, [message])
 |Teste si l'objet est null
 
-|assertNotNull([message], object)
+|assertNotNull(object, [message])
 |Teste si l'objet n'est pas null
+
+|assertThrows(expectableThrowableType, executableCode,  [message])
+|Teste si le code exécutable lève une exception du type attentu
 |=== 
 
-=== Annotations
+=== Annotations principales
 
 [cols="1,1"]
 |===
