@@ -12,7 +12,7 @@
 :revealjs_theme: beige
 :revealjs_hash: true
 :revealjs_height: 1000
-:revealjs_width: 1200
+:revealjs_width: 1400
 :revealjs_viewDistance: 5
 :revealjs_slideNumber: c/t
 

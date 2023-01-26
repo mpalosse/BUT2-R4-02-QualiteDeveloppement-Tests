@@ -21,11 +21,11 @@ image::rapport-junit.png[Rapport JUnit dans IntelliJ]
 
 === Exemple simple 
 
-* Une interface décrivant le comportement d'une pile
-* Une première implantation vide : `SimpleStack`
-* Une classe de test unitaire : `SimpleStackTest`
+* Une interface décrivant le comportement d'une pile : ``Stack``
+* Une première implantation vide : ``SimpleStack``
+* Une classe de test unitaire : ``SimpleStackTest``
 
-=== L'interface `Stack`
+=== L'interface ``Stack``
 
 [source,Java]
 ----
@@ -62,7 +62,7 @@ public interface Stack {
  }
 ----
 
-=== La classe `SimpleStack`
+=== La classe ``SimpleStack``
 
 [source,Java]
 ----
@@ -99,7 +99,7 @@ public class SimpleStack implements Stack {
 }
 ----
 
-=== La classe `SimpleStackTest`
+=== La classe ``SimpleStackTest```
 
 [source,Java]
 ----
@@ -210,8 +210,8 @@ Suite de test:: regroupement de classes de test qui peuvent être exécutées en
 === Conseils pratiques
 
 * Une classe de test par classe 
-** `<nomClasse>Test`
+** ``<nomClasse>Test``
 * Une ou plusieurs méthodes de test par méthode de classe 
-** `test<nomMethode>[<cas>][<attendu>]`
+** ``test<nomMethode>[<cas>][<attendu>]``
 * Fichiers sources des classes de test séparés des fichiers sources des classes principales.
-** `/src/*` et `test/*` 
+** ``/src/\*`` et ``test/*`` 
