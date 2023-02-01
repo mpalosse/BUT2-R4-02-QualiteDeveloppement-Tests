@@ -10,8 +10,9 @@
 
 === Les bénéfices principaux
 
-* Facilités pour la coneption de tests unitaires
+* Facilités pour la conception de tests unitaires
 * Lancement automatique des suites de tests
+** les tests peuvent être excutés par une plateforme d'intégration continue 
 * Génération de rapports d'executions
 
 === Exemple de rapport généré dans IntelliJ
