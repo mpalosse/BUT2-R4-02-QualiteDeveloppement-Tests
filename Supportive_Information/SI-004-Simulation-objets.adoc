@@ -1,0 +1,268 @@
+== Simuler les objets pour assurer l'isolation
+
+=== Garantir des tests unitaires légers
+
+* Nécessite de simuler les collaborateurs
+* À la main
+** Création d'implantations factices
+** Possible uniquement quand les classes des collaborateurs implémentent des interfaces 
+* En utilisant des librairies permettant de simuler des objets dans tous les cas
+
+=== Exemple : Nature, Trees and Forest
+
+* Une interface décrivant les objets de la ``Nature``
+* Une classe ``Tree`` implantant l'interface
+* Une classe ``Forest`` agrégeant des objets de la nature
+* https://github.com/MyPedagogicalRessources/Nature[Le projet sur Github]
+
+NOTE: Les interfaces et les classes principales ont été générées à l'aide de chatGPT
+
+=== L'interface ``Nature``
+
+[source%unbreakable,Java]
+----
+/**
+ * The Nature interface defines operations for growing and getting the height of an object.
+ */
+public interface Nature {
+    /**
+     * Grows the object by the specified amount of water.
+     * @param waterAmount the amount of water used for growing
+     */
+    void grow(int waterAmount);
+
+    /**
+     * Gets the height of the object.
+     * @return the height of the object
+     */
+    int getHeight();
+}
+----
+
+=== La classe ``Tree``
+
+[source%unbreakable, java]
+----
+/**
+ * The Tree class implements the Nature interface and represents a tree.
+ */
+public class Tree implements Nature {
+    private int height;
+
+    @Override
+    public void grow(int waterAmount) {
+        // well, a dummy function to convert water amount in an increasing of height
+        height += waterAmount/2;
+    }
+
+    @Override
+    public int getHeight() {
+        return height;
+    }
+}
+----
+
+=== La classe ``Forest``
+
+[source%unbreakable, java]
+----
+/**
+ * The Forest class represents a collection of Nature objects.
+ */
+public class Forest {
+    private List<Nature> natureList;
+
+    /**
+     * Constructs a new Forest with the specified list of Nature objects.
+     * @param natureList the list of Nature objects
+     */
+    public Forest(List<Nature> natureList) {
+        this.natureList = natureList;
+    }
+
+    /**
+     * Gives water to all the Nature objects in the Forest.
+     * @param waterAmount the amount of water to give
+     */
+    public void giveWater(int waterAmount) {
+        for (Nature nature : natureList) {
+            nature.grow(waterAmount);
+        }
+    }
+
+    /**
+     * Gets the total height of all the Nature objects in the Forest.
+     * @return the total height of all the Nature objects
+     */
+    public int getTotalHeight() {
+        int totalHeight = 0;
+        for (Nature nature : natureList) {
+            totalHeight += nature.getHeight();
+        }
+        return totalHeight;
+    }
+}
+----
+
+=== Tester la classe ``Forest``
+
+Trois approches...
+
+* On teste avec de vrais objets ``Tree`` 
+** Il s'agit alors plutôt de tests d'intégration 
+* On teste avec une implantation légère et simple
+** L'implantation permet de contenir le minimum de code pour exécuter les tests
+* On teste en utilisant une librairie spécialisée dans la construction d'objets factices : les _mocks_ 
+
+=== Tester avec les vrais objets ``Tree``
+
+WARNING: Dans ce cas, l'isolation n'est plus respectée, on est sur une approche "intégration".
+
+[source%unbreakable, java]
+----
+/**
+ * The ForestTest class tests the functionality of the Forest class.
+ */
+public class ForestWithRealObjectsTest {
+    /**
+     * Tests the getTotalHeight method of the Forest class.
+     */
+    @Test
+    public void testGetTotalHeight() {
+        // Given a forest with 2 trees
+        List<Nature> natureList = new ArrayList<>();
+        Nature tree1 = new Tree(); // <1>
+        tree1.grow(20); <2>
+        Nature tree2 = new Tree(); // <1>
+        tree2.grow(40); <2>
+        natureList.add(tree1);
+        natureList.add(tree2);
+        Forest forest = new Forest(natureList);
+        // When asking for the total height
+        int totalHeight = forest.getTotalHeight();
+        // Then I get the expected total height
+        assertEquals(30, totalHeight);
+    }
+}
+----
+<1> On créé de "vraies" instances de la classe ``Tree``
+<2> On doit alors configurer les vrais objets pour réaliser les tests.
+
+=== Tester avec une implantation "légères" des collaborateurs
+
+ifdef::backend-revealjs[=== !]
+
+==== La classe ``DummyTree``
+
+[source%unbreakable, java]
+----
+public class DummyTree implements Nature {
+
+    private final int height;
+
+    public DummyTree(int height) {
+        this.height = height;
+    }
+
+    @Override
+    public void grow(int waterAmount) { // <1>
+        // do nothing 
+    }
+    
+    @Override
+    public int getHeight() {
+        return height;
+    }
+}
+----
+<1> On n'a pas besoin de l'implantation de la méthode ``grow`` pour tester la classe Forest
+
+ifdef::backend-revealjs[=== !]
+
+==== La classe ``ForestWithDummyObjectsTest``
+
+[source%unbreakable, java]
+----
+ @Test
+    public void testGetTotalHeight() {
+        // Given a Forest with 2 (dummy) trees
+        List<Nature> natureList = new ArrayList<>();
+        Nature tree1 = new DummyTree(10); // <1>
+        Nature tree2 = new DummyTree(20); // <1>
+        natureList.add(tree1);
+        natureList.add(tree2);
+        Forest forest = new Forest(natureList);
+        // When asking for the total height
+        int totalHeight = forest.getTotalHeight();
+        // Then we get the expected height
+        assertEquals(30, totalHeight);
+    }
+----
+<1> L'utilisation d'une implantation spécifique aux tests allège la création de l'état du monde (_fixture_).
+
+=== Tester avec une librairie permettant la créations de _mocks_
+
+ifdef::backend-revealjs[=== !]
+
+==== Librairies dans différents langages
+
+* Plusieurs librairies existent en Java
+** https://site.mockito.org/[Mockito], EasyMock, etc. 
+* Des librairies existent pour d'autres langages
+** Mockito pour Python
+** https://laravel.com/docs/9.x/mocking[Mockery] développé dans le framework Laravel pour PHP
+
+ifdef::backend-revealjs[=== !]
+
+==== Ajouter la dépendance à Mockito via Maven
+
+Dans le fichier ``pom.xml``
+
+[source%unbreakable, xml]
+----
+<dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-junit-jupiter</artifactId>
+      <version>5.1.1</version>
+      <scope>test</scope>
+</dependency>
+----
+
+ifdef::backend-revealjs[=== !]
+
+==== La classe ``ForestWithMockitoTest``
+
+[source%unbreakable, java]
+----
+// ...
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+/**
+ * The ForestTest class tests the functionality of the Forest class.
+ */
+public class ForestWithMockitoTest {
+    /**
+     * Tests the getTotalHeight method of the Forest class.
+     */
+    @Test
+    public void testGetTotalHeight() {
+        // Given a forest with 2 (fake) trees
+        List<Nature> natureList = new ArrayList<>();
+        Nature tree1 = mock(Tree.class); // <1>
+        when(tree1.getHeight()).thenReturn(10); // <2>
+        Nature tree2 = mock(Tree.class); // <1>
+        when(tree2.getHeight()).thenReturn(20); // <2>
+        natureList.add(tree1);
+        natureList.add(tree2);
+        Forest forest = new Forest(natureList);
+        // When asking for the total height
+        int totalHeight = forest.getTotalHeight();
+        // Then we get the expected total height
+        assertEquals(30, totalHeight);
+    }
+}
+----
+<1> Création d'un _mock_ 
+<2> Spécification du comportement du _mock_

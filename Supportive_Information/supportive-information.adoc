@@ -1,20 +1,22 @@
 = R4.02 Qualité de développement
 :author: Franck Silvestre
-:revdate: 19 janvier 2023
-:revnumber: 1.0
+:revdate: 5 février 2023
+:revnumber: 1.1
 :title-page: true
 :toc-title: Table des matières
 :icons: font
 :toc: left
 :toclevels: 4
 :sectnums:
-:source-highlighter: highlightjs
+//:source-highlighter: highlightjs
 :revealjs_theme: beige
 :revealjs_hash: true
 :revealjs_height: 1000
 :revealjs_width: 1400
 :revealjs_viewDistance: 5
 :revealjs_slideNumber: c/t
+:source-highlighter: coderay
+:coderay-linenums-mode: inline
 
 
 ifdef::backend-html5[]
@@ -38,3 +40,5 @@ include::SI-001-Introduction-tests.adoc[]
 include::SI-002-Tests-unitaires.adoc[]
 
 include::SI-003-JUnit.adoc[]
+
+include::SI-004-Simulation-objets.adoc[]
