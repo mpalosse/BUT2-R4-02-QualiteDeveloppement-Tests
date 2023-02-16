@@ -1,0 +1,148 @@
+=== R4.02 Qualité de développement - CC1
+:author: Franck Silvestre
+:icons: font
+:source-highlighter: highlightjs
+//:source-highlighter: coderay
+//:coderay-linenums-mode: inline
+
+====
+* Aucun document autorisé. 
+* Partie notée sur 15 points à rendre sur copie.
+====
+
+*Code partiel de l'application Scrabble*
+
+Ci-dessous les classes partiellement implantées d'un programme permettant de calculer le score d'un mot placé sur un plateau de jeu de Scrabble.
+
+.La classe ``Tuile``
+[source%unbreakable, java]
+----
+package org.scrabble;
+
+/**
+ * Classe représentant une lettre du scrabble
+ */
+public class Tuile {
+
+    private char lettre;
+    private int points;
+
+    /**
+     * Créé une lettre avec le nombre de points associés
+     * @param lettre la lettre
+     * @param points les points associés à la lettre
+     */
+    public Tuile(char lettre, int points) {
+        this.lettre = lettre;
+        this.points = points;
+    }
+
+    /**
+     * @return la lettre
+     */
+    public char getLettre() {
+        return lettre;
+    }
+
+    /**
+     * @return le nombre de points correspondant à la lettre
+     */
+    public int getPoints() {
+        return points;
+    }
+}
+----
+
+.La classe ``MotSurPlateau``
+[source%unbreakable, java]
+----
+package org.scrabble;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+/**
+ * Représente un mot placé sur le plateau de Scrabble
+ */
+public class MotSurPlateau {
+
+    private Map<Tuile, Prime> lettresSurPlateau = new LinkedHashMap<>();
+
+    /**
+     * Ajoute une lettre qui compose le mot sur une case "normale", sans prime
+     * @param tuile la tuile
+     */
+    public void addTuileToMot(Tuile tuile) {
+        addTuileToMot(tuile, null);
+    }
+
+    /**
+     * Ajoute une lettre qui compose le mot sur une case dotée d'une prime
+     * @param tuile la tuile
+     * @param prime la prime associé à la case sur laquelle est déposé la tuile
+     */
+    public void addTuileToMot(Tuile tuile, Prime prime) {
+        lettresSurPlateau.put(tuile, prime);
+    }
+
+    /**
+     * Calcule et retourne le nombre de points que rapporte le mot
+     * @return le score calculé pour le mot
+     */
+    public int calculeScore() {
+        int score = 0;
+        for(Map.Entry<Tuile,Prime> lettrePlacee: lettresSurPlateau.entrySet()) {
+            // ...
+        }
+        return score;
+    }
+
+}
+----
+
+.L'énumération ``Prime``
+[source%unbreakable, java]
+----
+enum Prime {
+    MOT_TRIPLE,
+    MOT_DOUBLE,
+    LETTRE_DOUBLE,
+    LETTRE_TRIPLE
+}
+----
+
+.La classe ``MotSurPlateauTest``
+[source%unbreakable, java]
+----
+package org.scrabble;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+class MotSurPlateauTest {
+
+    @Test
+    void calculeScore_casNominal1() {
+        // given:...
+        // when:...
+        // then:...
+    }
+    //...
+}
+----
+
+*Travail à réaliser*
+
+1. Étudiez le code des classes ci-dessus.
+2. Reprenez la classe ``MotSurPlateauTest`` en la complétant avec les méthodes de tests couvrant tous les cas qui vous semblent pertinents de tester. Les méthodes ne contiendront pas de code Java, elles ne contiendront que les clauses _given_ , _when_, _then_, _expected_ sous forme de commentaires détaillés. 
+
+====
+Pour calculer le score d'un mot placé sur le plateau :
+
+* si la lettre est sur une case non primée, alors on ajoute le nombre de points de la lettre au score ;
+* si la lettre est sur une case primée LETTRE_DOUBLE alors on double le nombre de points de la lettre et on ajoute au score ;
+* si la lettre est sur une case primée LETTRE_TRIPLE alors on triple le nombre de points de la lettre et on ajoute au score ;
+* si une des lettres est sur une case primée MOT_DOUBLE alors on double le score du mot ;
+* si une des lettres est sur une case primée MOT_TRIPLE alors on triple le score du mot ;
+* si un mot recouvre plus d'un case primée MOT_***, on cumule les primes.
+====
