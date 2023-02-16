@@ -1,0 +1,9 @@
+cr
+data
+exports
+scans
+amc-*
+DOC*
+*.xml
+!DOC-sujet.pdf
+

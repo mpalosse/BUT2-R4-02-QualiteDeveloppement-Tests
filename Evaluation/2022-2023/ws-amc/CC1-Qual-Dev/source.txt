@@ -1,0 +1,67 @@
+# AMC-TXT source
+PaperSize: A4
+Font: Linux Libertine O
+Lang: FR
+Title: 2022-2023 - R4-02 Qualité de développement - CC1
+Code: 8
+CompleteMulti: 0
+ManualDuplex: 1
+Columns: 1
+SeparateAnswerSheet: 0
+AnswerSheetTitle: Feuille de réponses
+AnswerSheetPresentation: Les réponses doivent être fournies uniquement sur cette feuille. Aucune autre réponse
+ne sera prise en compte dans la notation. Les cases doivent être entèrement coloriées en noires pour être prises
+en compte dans la notation. Pour modifier une réponse, vous pouvez utiliser un correcteur blanc, sans
+re-dessiner la case à cocher.
+AnswerSheetColumns: 1
+AutoMarks: 1
+L-OpenReserved: Ne rien inscrire dans ces cases.
+L-Student: Veuillez coder votre numéro d'étudiant ci-contre, et écrire votre nom dans la case ci-dessous.
+
+Presentation: Durée totale : 51 mn (1h08 mn pour les tiers temps).
+
+Aucun document ni dispositif électronique n'est autorisé.
+
+Le symbole "trèfle" sur une question indique qu'il peut être attendu plus d'une réponse correcte.
+
+Les réponses doivent être fournies uniquement sur les feuilles d'énoncé. Aucune autre réponse
+ne sera prise en compte dans la notation. Les cases doivent être entièrement coloriées en noires pour être prises
+en compte dans la notation. Pour modifier une réponse, vous pouvez utiliser un correcteur blanc, sans
+re-dessiner la case à cocher.
+
+
+** [* Tests unitaires vs tests d'intégration *] - Cochez les assertions vraies
+        - Les tests d'intégration s'exécutent en général plus rapidement que les tests unitaires.
+        + Les tests unitaires consomment en général moins de ressources que les tests d'intégration.
+        + Les tests d'intégration vérifient le fonctionnement de "vrais" objets en interactions.
+        - Les tests unitaires créent toujours les vrais collaborateurs pour tester un objet.
+
+* [* Répartition des tests *] - Dans une application, quelle répartition de quantités de tests est la plus pertinente...
+        + 80% de tests unitaires, 15% de tests d'intégration, 5% de tests UI. 
+        - 80% de tests d'intégration, 15% de tests unitaires, 5% de tests UI.
+        - 80% de tests UI, 15% de tests d'intégration, 5% de tests unitaires.       
+
+** [* Bénéfices et limites des tests automatisés (TA) *] - Cochez les assertions vraies
+        - Les TA permettent de montrer qu'un programme fonctionne comme attendu.
+        + Les TA permettent de limiter le nombre de bugs.
+        + Les TA peuvent contenir des bugs.
+        + Les TA permettent d'effectuer des changements dans le code en confiance.
+
+** [* TDD *] - Cochez les assertions vraies
+        - En TDD, on code tous les tests d'une classe avant de coder toutes les méthodes de la classe.
+        - En TDD, dès qu'un test passe, on passe à l'écriture d'un nouveau test.
+        + Le refactoring consiste à remanier le code d'un programme.
+        - Le refactoring est une étape du TDD qu'un développeur doit entreprendre après qu'un test échoue.
+        + Le TDD améliore la conception d'un programme.
+
+** [* Code coverage *] - Cochez les assertions vraies
+        - La couverture du code par les tests permet de mesurer objectivement la qualité des tests.
+        + La couverture du code par les tests permet de savoir quelles classes, méthodes et lignes de codes sont invoquées par les tests.
+        - En TDD, la couverture du code par les tests est nécéssairement de 100%.
+        + Dans un projet agile, l'objectif de couverture de code par les tests est un bon critère à ajouter à la définition de fini. 
+
+
+
+
+
+
