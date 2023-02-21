@@ -134,7 +134,7 @@ class MotSurPlateauTest {
 *Travail à réaliser*
 
 1. Étudiez le code des classes ci-dessus.
-2. Reprenez la classe ``MotSurPlateauTest`` et complétez la avec les méthodes testant la méthode ``calculeStore`` couvrant tous les cas vous paraissant pertinents de tester. Les méthodes ne contiendront pas de code Java, elles ne contiendront que des clauses _given_ , _when_, _then_, _expected_ sous forme de commentaires détaillés. 
+2. Reprenez la classe ``MotSurPlateauTest`` et complétez la avec les méthodes testant la méthode ``calculeScore`` couvrant tous les cas vous paraissant pertinents de tester. Les méthodes ne contiendront pas de code Java, elles ne contiendront que des clauses _given_ , _when_, _then_, _expected_ sous forme de commentaires détaillés. 
 
 ====
 Pour calculer le score d'un mot placé sur le plateau :
