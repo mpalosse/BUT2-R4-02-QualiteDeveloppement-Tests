@@ -1,0 +1,29 @@
+== Activité I - Faire fonctionner les exemples Yasmf version 1.6
+
+=== Introduction
+
+==== Objectifs
+
+Comprendre la mise en œuvre d'une application Web pour laquelle la qualité de développement  s'appuie sur :
+
+* Un gestionnaire de dépendance.
+* Une couverture du code par les tests unitaires et d'intégration.
+* Un outil d'analyse statique de code.
+
+==== Modalités
+
+Alternance de développements et de séquences elaastic.
+
+=== Exemple "Hello World"
+
+. Récupérez et faites tourner sur votre environnement de développement local  https://github.com/the-yasmf-project/yasmf_hello_world[l'application "Hello World" donner en exemple sur le site Github du projet Yasmf]. 
+. Rendez-vous sur le quizz elaastic "Yasmf 1.6 - Les exemples résolus" et répondez aux questions du quizz relatives à l'exemple "hello world".
+
+=== Exemple "All users"
+
+. Récupérez et faites tourner sur votre environnement de développement local https://github.com/the-yasmf-project/yasmf_all_users[l'application "All users" donner en exemple sur le site Github du projet Yasmf]. 
+. Rendez-vous sur le quizz elaastic "Yasmf 1.6 - Les exemples résolus" et répondez aux questions du quizz relatives à l'exemple "All users".
+
+== Activité II - CheckYourMood V2
+
+Améliorez CheckYourMood en reproduisant la stratégie de qualité de développement étudiée précédemment.
