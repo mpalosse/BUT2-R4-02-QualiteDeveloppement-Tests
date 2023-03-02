@@ -2,10 +2,10 @@
 :author: Franck Silvestre
 :revdate: 2 mars 2023
 :revnumber: 1.0
-:title-page: true
+// :title-page: false
 :icons: font
-:toc: left
-:toclevels: 4
+//:toc: left
+//:toclevels: 4
 :sectnums:
 :source-highlighter: highlightjs
 :revealjs_theme: beige
