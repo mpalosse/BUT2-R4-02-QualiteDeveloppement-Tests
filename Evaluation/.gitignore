@@ -7,3 +7,5 @@ DOC*
 *.xml
 !DOC-sujet.pdf
 
+Etudiants.csv
+Notes*.xlsx
