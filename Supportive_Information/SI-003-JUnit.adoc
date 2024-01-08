@@ -124,10 +124,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class SimpleStackTest {
 
     @Test // <1>
-    @DisplayName("Test the state of a newly created slack") // <2>
+    @DisplayName("Test the state of a newly created stack") // <2>
     public void testCreateEmptyStack() { // Test case
 
-        // When a freshly stack is created
+        // When a fresh stack is created
         Stack stack = new SimpleStack();
 
         // Then… (oracle)
@@ -153,7 +153,7 @@ class SimpleStackTest {
         // Given an empty stack
         Stack stack = new SimpleStack();
 
-        // When we "pop" the stack, should throws an EmptyStackException.
+        // When we "pop" the stack, should throw an EmptyStackException.
         //assertThrows(EmptyStackException.class, ()->stack.pop()); <3>
         assertThrows(EmptyStackException.class, stack::pop, "EmptyStackException not thrown"); // <2>
     }

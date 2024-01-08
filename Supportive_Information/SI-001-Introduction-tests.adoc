@@ -14,7 +14,7 @@
 
 image::PyramideTests.png[La pyramide des tests]
 
-* Plus on se rapproche du sommet de la pyramide plus on test la solution intégrée, plus cela est couteux en ressources.
+* Plus on se rapproche du sommet de la pyramide plus on teste la solution intégrée, plus cela est couteux en ressources.
 * Les tests _UI_ sont souvent désignés par les expressions "tests fontionnels" ou "tests _end-to-end_".
 
 === Pourquoi tester les logiciels ?

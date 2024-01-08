@@ -57,7 +57,7 @@ NOTE: Thanks'to Hame Vocke
 === La couverture du code par les tests
 
 * Quand sait-on si on a écrit assez de tests ?
-* La couverture du code (_code coverage_) est un idicateur objectif => pas d'indications sur la qualité des tests écrits
+* La couverture du code (_code coverage_) est un indicateur objectif => pas d'indications sur la qualité des tests écrits
 
 ifdef::backend-revealjs[=== !]
 
@@ -79,7 +79,7 @@ image::coverage2.png[Couverture du code dans Intellij- détail pour une classe]
 
 == _Test Driven Development_ (TDD)
 
-=== Générlité sur le TDD
+=== Généralités sur le TDD
 
 * Conçu initialement par Erich Gamma et Kent beck.
 * Utilisation des tests unitaires comme spécification exécutable du code principal. 
