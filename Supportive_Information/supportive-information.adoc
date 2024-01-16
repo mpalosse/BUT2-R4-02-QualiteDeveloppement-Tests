@@ -8,15 +8,13 @@
 :toc: left
 :toclevels: 4
 :sectnums:
-//:source-highlighter: highlightjs
-:revealjs_theme: beige
+:source-highlighter: highlightjs
+:revealjs_theme: white
 :revealjs_hash: true
-:revealjs_height: 1000
-:revealjs_width: 1400
+:revealjs_height: 792
+:revealjs_width: 1408
 :revealjs_viewDistance: 5
 :revealjs_slideNumber: c/t
-:source-highlighter: coderay
-:coderay-linenums-mode: inline
 
 
 ifdef::backend-html5[]

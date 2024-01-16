@@ -7,7 +7,7 @@
 * Le contrat est *exécutable* => Automatisation
 * En POO, l'unité de code est en général la classe
 
-=== Un test unnitaire doit être...
+=== Un test unitaire doit être...
 
 * Isolé (indépendant de tous les autres tests)
 * Déterministe (reproductible)
