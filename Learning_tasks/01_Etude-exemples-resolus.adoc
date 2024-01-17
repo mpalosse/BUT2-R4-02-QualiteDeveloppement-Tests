@@ -16,12 +16,12 @@ Alternance de développements et de séquences elaastic.
 
 ==== Exemple "Hello World"
 
-. Récupérez et faites tourner sur votre environnement de développement local  https://github.com/the-yasmf-project/yasmf_hello_world[l'application "Hello World" donner en exemple sur le site Github du projet Yasmf]. 
+. Récupérez et faites tourner sur votre environnement de développement local  https://github.com/the-yasmf-project/yasmf_hello_world[l'application "Hello World" donnée en exemple sur le site Github du projet Yasmf]. 
 . Rendez-vous sur le quizz elaastic "Yasmf 1.6 - Les exemples résolus" et répondez aux questions du quizz relatives à l'exemple "hello world".
 
 ==== Exemple "All users"
 
-. Récupérez et faites tourner sur votre environnement de développement local https://github.com/the-yasmf-project/yasmf_all_users[l'application "All users" donner en exemple sur le site Github du projet Yasmf]. 
+. Récupérez et faites tourner sur votre environnement de développement local https://github.com/the-yasmf-project/yasmf_all_users[l'application "All users" donnée en exemple sur le site Github du projet Yasmf]. 
 . Rendez-vous sur le quizz elaastic "Yasmf 1.6 - Les exemples résolus" et répondez aux questions du quizz relatives à l'exemple "All users".
 
 === Activité II - Projet Web V2
