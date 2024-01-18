@@ -1,0 +1,53 @@
+== Intellij / Maven
+:author: Mathieu Palosse, Franck Silvestre
+:revdate: 16 janvier 2024
+:revnumber: 1.0
+// :title-page: false
+:icons: font
+//:toc: left
+//:toclevels: 4
+//:sectnums:
+:source-highlighter: highlightjs
+:revealjs_theme: beige
+:revealjs_hash: true
+:revealjs_height: 1200
+:revealjs_width: 1400
+:revealjs_viewDistance: 5
+:revealjs_slideNumber: c/t
+
+
+ifdef::backend-html5[]
+++++
+include::../licence.html[]
+++++
+endif::[]
+
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+== Étapes
+
+=== IntelliJ : activation de licence
+
+. Ouvrez Intellij.
+. À l'invite de la fourniture d'une licence :
+** Vérifiez dans les `proxy settings` que l'option `no proxy` est sélectionnée.
+** sélectionnez l'option `licence server` et indiquez l'URL du serveur de licence fourni dans l'espace Moodle et cliquez sur `Activate`.
+** Mettez à jour les `proxy settings` (http://cache.iut-rodez.fr:8080)
+** Cliquez sur `Continue`.
+
+=== Clonage du projet via Intellij
+
+. Dans la fenêtre de bienvenue ou dans le menu `File / New` choisissez l'option permettant de créer un nouveau projet `from version control`.
+. Copiez l'URL de votre dépôt Git et clonez votre projet dans un dossier du lecteur Z.
+
+=== Configuration Maven
+
+1. Dans le lecteur Z:, créez le dossier `.m2` et placez vous dans ce dossier.
+.. Recopiez, dans ce dossier, le fichier `settings.xml` fourni dans l'espace Moodle.
+.. Créez, dans ce dossier, le dossier `repository`.
