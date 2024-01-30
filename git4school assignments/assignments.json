@@ -1,0 +1,756 @@
+{
+  "assignments": [
+    {
+      "metadata": {
+        "questions": [
+          "#2.1",
+          "#2.2",
+          "#3.1",
+          "#3.2"
+        ],
+        "defaultSessionDuration": {
+          "hour": 1,
+          "minute": 15,
+          "second": 0
+        },
+        "title": "Mezabi",
+        "course": "Dev Web",
+        "program": "BUT2",
+        "year": "2023-2024",
+        "startDate": "2023-11-20T01:00",
+        "endDate": null,
+        "lastModificationDate": "2023-12-14T13:03:51.228Z"
+      },
+      "reviews": [],
+      "corrections": [],
+      "others": [],
+      "sessions": [
+        {
+          "tpGroup": "A2-A4-D",
+          "startDate": "2023-11-28T12:00:00.000Z",
+          "endDate": "2023-11-28T13:15:00.000Z"
+        },
+        {
+          "tpGroup": "A2-A4-D",
+          "startDate": "2023-12-05T12:30:00.219Z",
+          "endDate": "2023-12-05T13:45:42.219Z"
+        },
+        {
+          "tpGroup": "A2-A4-D",
+          "startDate": "2023-12-14T12:31:00.000Z",
+          "endDate": "2023-12-14T13:46:00.000Z"
+        }
+      ],
+      "repositories": [
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-antoninVeyre12",
+          "name": "Antonin YYY",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-lbaudroit",
+          "name": "BAUDROIT Leïla",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-CrabeNeo",
+          "name": "Bécogné Néo",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-djedline",
+          "name": "BOYER Djedline",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-Chaipo-arch",
+          "name": "Bribach Ahmed",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-AurorAkali",
+          "name": "BRIOT Nael",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-DroGone31",
+          "name": "Britelle Robin",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-Alexandreiut",
+          "name": "Brouzes Alexandre",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-alixB31",
+          "name": "Brugier Alix",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-TanyCB",
+          "name": "CATALA BAILLY Tany",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-Leptar",
+          "name": "Cheikh-Boukal Léo",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-enzo2900",
+          "name": "CLUZEL Enzo",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-quentinformatique",
+          "name": "COSTES Quentin",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-Francois389",
+          "name": "de Saint Palais François",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-cleeem",
+          "name": "DENAMIEL Clément",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-IUTLucas",
+          "name": "Descriaud Lucas",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-TomDouaud",
+          "name": "Douaud Tom",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-Odonata971",
+          "name": "FABRE Florian",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-xGk93",
+          "name": "FAUGIERES Loïc",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-Mateofsr",
+          "name": "FAUSSURIER Matéo",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-LolineF",
+          "name": "FORNALIK Loline",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-Turlut",
+          "name": "GIRARDIN NATHAN",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-belicfr",
+          "name": "GUIL Jonathan",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-SyberSim",
+          "name": "GUIRAUD Simon",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-Bratoun",
+          "name": "IBRAHIME RAYAN",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-ThomasIzard",
+          "name": "IZARD Thomas",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-2-Atom-7",
+          "name": "Jammes Tom",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-SamuelLacam",
+          "name": "Lacam Samuel",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-TonyLapeyre",
+          "name": "LAPEYRE Tony",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-iutThomasLmre",
+          "name": "LEMAIRE Thomas",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-NoahMiquel",
+          "name": "Miquel Noah",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-jodiemonterde",
+          "name": "MONTERDE Jodie",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-ConstantNguyen",
+          "name": "NGUYEN Constant",
+          "tpGroup": "A2-A4-D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-Benicol",
+          "name": "NICOL Benjamin",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-rom0raf",
+          "name": "Roma Rafaël",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-GabrielSau",
+          "name": "SAUVAGNAC GABRIEL",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-UgoSchardt",
+          "name": "SCHARDT Ugo",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-FabienSerres",
+          "name": "SERRES Fabien",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-aurelsoleil",
+          "name": "SOLEIL Aurélien",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-ATuffery",
+          "name": "TUFFERY Antoine",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-lohanvig",
+          "name": "VIGNALS Lohan",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/r3-01-mezabi-1-guillaume-youdale",
+          "name": "YOUDALE Guillaume",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "questions": [
+          "#1.1",
+          "#1.2",
+          "#2.1",
+          "#2.2",
+          "#2.3"
+        ],
+        "defaultSessionDuration": {
+          "hour": 1,
+          "minute": 15,
+          "second": 0
+        },
+        "title": "SimpleStack",
+        "course": "R4.02",
+        "program": "BUT2",
+        "year": "2023-2024",
+        "startDate": "2024-01-24T01:00",
+        "endDate": null,
+        "lastModificationDate": "2024-01-30T10:38:53.286Z"
+      },
+      "reviews": [],
+      "corrections": [],
+      "others": [],
+      "sessions": [
+        {
+          "tpGroup": "A2.A4.D",
+          "startDate": "2024-01-24T08:15:00.071Z",
+          "endDate": "2024-01-24T09:30:23.071Z"
+        },
+        {
+          "tpGroup": "A1",
+          "startDate": "2024-01-24T09:45:00.116Z",
+          "endDate": "2024-01-24T11:00:35.116Z"
+        },
+        {
+          "tpGroup": "A2.A4.D",
+          "startDate": "2024-01-30T08:15:00.000Z",
+          "endDate": "2024-01-30T09:30:00.000Z"
+        },
+        {
+          "tpGroup": "A3",
+          "startDate": "2024-01-30T09:45:00.000Z",
+          "endDate": "2024-01-30T11:00:00.000Z"
+        }
+      ],
+      "repositories": [
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-lbaudroit",
+          "name": "BAUDROIT Leïla",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-CrabeNeo",
+          "name": "Bécogné Néo",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-djedline",
+          "name": "Boyer Djedline",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-Chaipo-arch-1",
+          "name": "Bribach Ahmed",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-AurorAkali",
+          "name": "BRIOT Nael",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-DroGone31",
+          "name": "Britelle Robin",
+          "tpGroup": "1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-Alexandreiut",
+          "name": "BROUZES ALEXANDRE",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-alixB31",
+          "name": "BRUGIER ALIX",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-TanyCB",
+          "name": "CATALA BAILLY Tany",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-enzo2900",
+          "name": "CLUZEL Enzo",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-quentinformatique",
+          "name": "COSTES Quentin",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-Francois389",
+          "name": "de Saint Palais François",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-IUTLucas",
+          "name": "Descriaud Lucas",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-xGk93",
+          "name": "FAUGIERES Loïc",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-Mateofsr-1",
+          "name": "FAUSSURIER Matéo",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-nathan-girardin",
+          "name": "Girardin Nathan",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-belicfr",
+          "name": "GUIL Jonathan",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-SyberSim",
+          "name": "GUIRAUD Simon",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-Bratoun",
+          "name": "IBRAHIME RAYAN",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-ThomasIzard",
+          "name": "IZARD Thomas",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-NoahMiquel",
+          "name": "MIQUEL Noah",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-jodiemonterde",
+          "name": "MONTERDE Jodie",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-ConstantNguyen",
+          "name": "NGUYEN Constant",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-Benicol",
+          "name": "Nicol Benjamin",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-UgoSchardt",
+          "name": "SCHARDT Ugo",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-antoninveyre",
+          "name": "Veyre Antonin",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-iutThomasLmre",
+          "name": "Lemaire Thomas",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-2-Atom-7",
+          "name": "JAMMES Tom",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-SamuelLacam",
+          "name": "LACAM Samuel",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-LolineF",
+          "name": "Fornalik Loline",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-cleeem",
+          "name": "Denamiel Clément",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-rom0raf",
+          "name": "Roma Rafael",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-GabrielSau",
+          "name": "SAUVAGNAC Gabriel",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-ATuffery",
+          "name": "TUFFERY Antoine",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-TonyLapeyre",
+          "name": "LAPEYRE Tony",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-FabienSerres",
+          "name": "SERRES Fabien",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-aurelsoleil",
+          "name": "Soleil Aurélien",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-simplestack-lohanvig",
+          "name": "VIGNALS Lohan",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "questions": [
+          "#0",
+          "#1",
+          "#2",
+          "#3",
+          "#4"
+        ],
+        "defaultSessionDuration": {
+          "hour": 1,
+          "minute": 15,
+          "second": 0
+        },
+        "title": "QuestionsScore",
+        "course": "R4.02",
+        "program": "BUT2",
+        "year": "2023-2024",
+        "startDate": "2024-01-30T00:00:00.000Z",
+        "endDate": null,
+        "lastModificationDate": "2024-01-30T11:05:59.728Z"
+      },
+      "reviews": [],
+      "corrections": [],
+      "others": [],
+      "sessions": [
+        {
+          "tpGroup": "A3",
+          "startDate": "2024-01-30T09:45:00.121Z",
+          "endDate": "2024-01-30T11:00:09.121Z"
+        }
+      ],
+      "repositories": [
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-LolineF",
+          "name": "Fornalik Loline",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2-Atom-7",
+          "name": "Jammes Tom",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-iutThomasLmre",
+          "name": "Lemaire Thomas",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-SamuelLacam",
+          "name": "LACAM Samuel",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-cleeem",
+          "name": "Denamiel Clement",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-GabrielSau",
+          "name": "SAUVAGNAC Gabriel",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-ATuffery",
+          "name": "TUFFERY Antoine",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-FabienSerres",
+          "name": "SERRES Fabien",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-aurelsoleil",
+          "name": "SOLEIL Aurélien",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        }
+      ]
+    }
+  ]
+}
