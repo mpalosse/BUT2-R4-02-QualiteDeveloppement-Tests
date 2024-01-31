@@ -672,9 +672,9 @@
         "course": "R4.02",
         "program": "BUT2",
         "year": "2023-2024",
-        "startDate": "2024-01-30T00:00:00.000Z",
+        "startDate": "2024-01-30T00:00",
         "endDate": null,
-        "lastModificationDate": "2024-01-30T11:05:59.728Z"
+        "lastModificationDate": "2024-01-31T10:13:45.889Z"
       },
       "reviews": [],
       "corrections": [],
@@ -688,64 +688,176 @@
       ],
       "repositories": [
         {
-          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-LolineF",
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-LolineF",
           "name": "Fornalik Loline",
           "tpGroup": "A3",
           "errors": [],
           "commits": []
         },
         {
-          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2-Atom-7",
-          "name": "Jammes Tom",
-          "tpGroup": "A3",
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-Francois389",
+          "name": "de Saint Palais François",
+          "tpGroup": "A2.A4.D",
           "errors": [],
           "commits": []
         },
         {
-          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-iutThomasLmre",
-          "name": "Lemaire Thomas",
-          "tpGroup": "A3",
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-jodiemonterde",
+          "name": "MONTERDE Jodie",
+          "tpGroup": "A1",
           "errors": [],
           "commits": []
         },
         {
-          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-SamuelLacam",
-          "name": "LACAM Samuel",
-          "tpGroup": "A3",
-          "errors": [],
-          "commits": []
-        },
-        {
-          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-cleeem",
-          "name": "Denamiel Clement",
-          "tpGroup": "A3",
-          "errors": [],
-          "commits": []
-        },
-        {
-          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-GabrielSau",
-          "name": "SAUVAGNAC Gabriel",
-          "tpGroup": "A3",
-          "errors": [],
-          "commits": []
-        },
-        {
-          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-ATuffery",
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-ATuffery",
           "name": "TUFFERY Antoine",
           "tpGroup": "A3",
           "errors": [],
           "commits": []
         },
         {
-          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-FabienSerres",
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-TanyCB",
+          "name": "Catala Bailly Tany",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-SamuelLacam",
+          "name": "LACAM Samuel",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-xGk93",
+          "name": "FAUGIERES Loïc",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-GabrielSau",
+          "name": "SAUVAGNAC Gabriel",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-iutThomasLmre",
+          "name": "Lemaire Thomas",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-cleeem",
+          "name": "Denamiel Clement",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-alixB31",
+          "name": "XXX YYY",
+          "tpGroup": "1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-aurelsoleil",
+          "name": "SOLEIL Aurélien",
+          "tpGroup": "A3",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-SyberSim",
+          "name": "GUIRAUD Simon",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-Benicol",
+          "name": "Nicol Benjamin",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-FabienSerres",
           "name": "SERRES Fabien",
           "tpGroup": "A3",
           "errors": [],
           "commits": []
         },
         {
-          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-aurelsoleil",
-          "name": "SOLEIL Aurélien",
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-IUTLucas",
+          "name": "Descriaud Lucas",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-lbaudroit",
+          "name": "BAUDROIT Leïla",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-ConstantNguyen",
+          "name": "NGUYEN Constant",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-djedline",
+          "name": "XXX YYY",
+          "tpGroup": "1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-ThomasIzard",
+          "name": "IZARD THOMAS",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-UgoSchardt",
+          "name": "SCHARDT Ugo",
+          "tpGroup": "A2.A4.D",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-quentinformatique",
+          "name": "COSTES Quentin",
+          "tpGroup": "1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-enzo2900",
+          "name": "CLUZEL Enzo",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-Chaipo-arch",
+          "name": "Bribach Ahmed",
+          "tpGroup": "A1",
+          "errors": [],
+          "commits": []
+        },
+        {
+          "url": "https://github.com/Rodez-IUT/but2-r4-02-questionsscore-2023-2024-2-Atom-7",
+          "name": "Jammes Tom",
           "tpGroup": "A3",
           "errors": [],
           "commits": []
