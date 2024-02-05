@@ -33,4 +33,4 @@ Pour tester la méthode push de la classe SimpleStack, un développeur propose c
 //Then an item can be pushed on top of the stack
 ```
 1. En quoi ce test n'est pas satisfaisant ?
-2. Proposer les tests unitaires pour tester de manière statisfaisante la méthode push.
+2. Proposer les tests unitaires pour tester de manière satisfaisante la méthode push.
