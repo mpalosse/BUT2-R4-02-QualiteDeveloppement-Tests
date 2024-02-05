@@ -42,7 +42,7 @@ re-dessiner la case à cocher.
         - 80% de tests UI, 15% de tests d'intégration, 5% de tests unitaires.       
 
 ** [* Bénéfices et limites des tests automatisés (TA) *] - Cochez les assertions vraies
-        - Les TA permettent de montrer qu'un programme fonctionne comme attendu.
+        - Les TA permettent de s'assurer qu'un programme fonctionne comme attendu.
         + Les TA permettent de limiter le nombre de bugs.
         + Les TA peuvent contenir des bugs.
         + Les TA permettent d'effectuer des changements dans le code en confiance.
@@ -62,7 +62,7 @@ re-dessiner la case à cocher.
 
 ** [* Suite de tests*] - Cochez les assertions vraies
         - Une bonne suite de tests est une suite de tests où les tests dépendent les uns des autres.
-        - Le test des cas d'erreur permet de tester la robustesse d'un programme.
+        - Le test des cas d'erreur suffit pour tester la robustesse d'un programme.
         + Une bonne suite de tests testent explicitement uniquement l'interface publique de l'objet testé. 
         + Un test en échec indique en général un bug dans le programme principal.
         + Un test en erreur indique en général un bug dans le test.

@@ -1,20 +1,24 @@
 # Idées de questions à choix fermées
-* Parmis les réponses suivantes, quelles sont celles qui correspondent à une bonne pratique de test :
-1. faire des affichages dans la console
-2. tester uniquement les valeurs les plus fréquemment rencontrées
-3. #TODO...
-* Un bon test doit (plusieurs réponses possibles) :
-1. ne pas introduire de bugs
-2. #TODO...
+
+** [* Les bons et les mauvais tests *] - Cochez les assertions vraies
+- une unique classe de test est nécessaire pour un programme comportant plusieurs classes
+- on doit tester les accesseurs des classes (getters et setters)
++ on teste uniquement le comportement observable d'un objet
++ un test doit pouvoir être répété automatiquement
+- un test peut avoir un résultat qui varie
++ faire réussir un test ne doit pas introduire de bug dans le programme principal
+
+** [* Les bonnes pratiques de test *] - Cochez les assertions qui selon vous correspondent à de bonnes pratiques de test :
+- faire uniquement des affichages dans la console
+- tester uniquement les valeurs les plus fréquemment rencontrées
+- tester uniquement les cas nominaux
+- tester uniquement les cas d'erreurs/cas limites
++ manque bonne réponse...
+
+
 
 
 # Idées de questions ouvertes
-
-## Questions de cours
-* pourquoi tester ?
-* quelles sont les limites des tests ?
-* donner les 5 critères qui caractérisent un test unitaire
-* quoi tester ?
 
 ## Questions "pratiques"
 * Voici un test :
