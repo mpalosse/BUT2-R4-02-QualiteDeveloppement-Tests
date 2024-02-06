@@ -39,7 +39,7 @@ void testPush() {
  *
  * @return la nouvelle liste triée
  */
-void trieListeEntiers(List<Integer> listeEntiers) {
+void triListeEntiers(List<Integer> listeEntiers) {
     //...
     return listeTriee;
 }

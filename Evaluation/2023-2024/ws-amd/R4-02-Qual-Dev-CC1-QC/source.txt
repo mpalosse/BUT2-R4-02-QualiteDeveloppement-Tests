@@ -25,49 +25,49 @@ Aucun document ni dispositif électronique n'est autorisé.
 Le symbole "trèfle" sur une question indique qu'il peut être attendu plus d'une réponse correcte.
 
 Les réponses doivent être fournies uniquement sur les feuilles d'énoncé. Aucune autre réponse
-ne sera prise en compte dans la notation. Les cases doivent être entièrement coloriées en noires pour être prises
+ne sera prise en compte dans la notation. Les cases doivent être entièrement coloriées en noir pour être prises
 en compte dans la notation. Pour modifier une réponse, vous pouvez utiliser un correcteur blanc, sans
 re-dessiner la case à cocher.
 
 
-** [* Tests unitaires vs tests d'intégration *] - Cochez les assertions vraies
+** [* Tests unitaires vs tests d'intégration *] - Cochez les assertions vraies :
         - Les tests d'intégration s'exécutent en général plus rapidement que les tests unitaires.
         - Les tests unitaires consomment en général plus de ressources que les tests d'intégration.
         + Les tests d'intégration vérifient le fonctionnement de "vrais" objets en interactions.
         - Les tests unitaires créent toujours les vrais collaborateurs pour tester un objet.
 
-* [* Répartition des tests *] - Dans une application, quelle répartition de quantités de tests est la plus pertinente...
+* [* Répartition des tests *] - Dans une application, quelle répartition de quantités de tests est la plus pertinente :
         + 80% de tests unitaires, 15% de tests d'intégration, 5% de tests UI. 
         - 80% de tests d'intégration, 15% de tests unitaires, 5% de tests UI.
         - 80% de tests UI, 15% de tests d'intégration, 5% de tests unitaires.       
 
-** [* Bénéfices et limites des tests automatisés (TA) *] - Cochez les assertions vraies
+** [* Bénéfices et limites des tests automatisés (TA) *] - Cochez les assertions vraies :
         - Les TA permettent de s'assurer qu'un programme fonctionne comme attendu.
         + Les TA permettent de limiter le nombre de bugs.
         + Les TA peuvent contenir des bugs.
         + Les TA permettent d'effectuer des changements dans le code en confiance.
 
-** [* TDD *] - Cochez les assertions vraies
+** [* TDD *] - Cochez les assertions vraies :
         - En TDD, on code tous les tests d'une classe avant de coder toutes les méthodes de la classe.
         - En TDD, dès qu'un test passe, on passe à l'écriture d'un nouveau test.
         + Le refactoring consiste à remanier le code d'un programme.
         - Le refactoring est une étape du TDD qu'un développeur doit entreprendre après qu'un test échoue.
         + Le TDD améliore la conception d'un programme.
 
-** [* Code coverage *] - Cochez les assertions vraies
+** [* Code coverage *] - Cochez les assertions vraies :
         - La couverture du code par les tests permet de mesurer objectivement la qualité des tests.
         + La couverture du code par les tests permet de savoir quelles classes, méthodes et lignes de codes sont invoquées par les tests.
         + En TDD, la couverture du code par les tests n'est pas nécéssairement de 100%.
         + Dans un projet agile, l'objectif de couverture de code par les tests est un bon critère à ajouter à la définition de fini. 
 
-** [* Suite de tests*] - Cochez les assertions vraies
+** [* Suite de tests*] - Cochez les assertions vraies :
         - Une bonne suite de tests est une suite de tests où les tests dépendent les uns des autres.
         - Les tests des cas d'erreur suffisent pour tester la robustesse d'un programme.
         + Une bonne suite de tests teste explicitement uniquement l'interface publique de l'objet testé. 
         + Un test en échec indique en général un bug dans le programme principal.
         + Un test en erreur indique en général un bug dans le test.
 
-** [* Simuler des collaborateurs*] - Cochez les assertions vraies
+** [* Simuler des collaborateurs*] - Cochez les assertions vraies :
         + Simuler des collaborateurs dans un test permet en général de limiter le coût d'exécution d'un test.
         - On utilise des collaborateurs simulés en général dans les tests d'intégration.
         + Il n'est pas toujours possible de créer un collaborateur simulé "à la main" pour une classe donnée.
