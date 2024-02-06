@@ -18,7 +18,7 @@ AutoMarks: 1
 L-OpenReserved: Ne rien inscrire dans ces cases.
 L-Student: Veuillez coder votre numéro d'étudiant ci-contre, et écrire votre nom dans la case ci-dessous.
 
-Presentation: Durée totale : 42 mn (56 mn pour les tiers temps). Partie QCM sur 6 points.
+Presentation: Durée totale : 42 mn (56 mn pour les tiers temps). Partie QCM sur 7 points.
 
 Aucun document ni dispositif électronique n'est autorisé.
 
