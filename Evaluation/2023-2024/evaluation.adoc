@@ -1,0 +1,48 @@
+=== R4.02 Qualité de développement - CC1
+:author: Franck Silvestre & Mathieu Palosse 
+:icons: font
+:source-highlighter: highlightjs
+//:source-highlighter: coderay
+//:coderay-linenums-mode: inline
+
+====
+* Aucun document autorisé. 
+* Partie notée sur 14 points à rendre sur copie.
+====
+
+==== Exercice 1 - Retour sur SimpleStack (7 points)
+
+Pour tester la méthode push de la classe SimpleStack, un développeur propose les commentaires suivants pour cadrer le développement des tests :
+
+.La méthode ``testPush``
+[source%unbreakable, java]
+----
+void testPush() {
+    // When a stack is created
+    // Then an item can be pushed on top of the stack
+}
+----
+
+1. En quoi cette proposition de cadrage n'est pas satisfaisante ? (3 points)
+2. Proposez les tests unitaires JUnit5 pour tester de manière satisfaisante la méthode push. Les méthodes de tests proposées ne doivent pas contenir le code Java. Vous fournirez pour chaque test uniquement le découpage en clauses du type "Given/When/Then" sous formes de commentaires.  (4 points)
+
+=== Exercice 2 - Méthode de trie (7 points)
+
+.La méthode ``triListeEntiers``
+[source%unbreakable, java]
+----
+/**
+ *  Méthode prenant en entrée une liste d'entiers et 
+ *  retournant une nouvelle liste correspondant à la liste *  triée par ordre croissant
+ *
+ * @param listeEntiers la liste à triée
+ *
+ * @return la nouvelle liste triée
+ */
+void trieListeEntiers(List<Integer> listeEntiers) {
+    //...
+    return listeTriee;
+}
+----
+
+Proposer les tests unitaires JUnit5 permettant de tester de manière staisafisante cette méthode. Les méthodes de tests proposées ne doivent pas contenir le code Java. Vous fournirez pour chaque test uniquement le découpage en clauses du type "Given/When/Then" sous formes de commentaires.

@@ -18,7 +18,7 @@ AutoMarks: 1
 L-OpenReserved: Ne rien inscrire dans ces cases.
 L-Student: Veuillez coder votre numéro d'étudiant ci-contre, et écrire votre nom dans la case ci-dessous.
 
-Presentation: Durée totale : 42 mn (56 mn pour les tiers temps). Partie QCM sur 5 points.
+Presentation: Durée totale : 42 mn (56 mn pour les tiers temps). Partie QCM sur 6 points.
 
 Aucun document ni dispositif électronique n'est autorisé.
 
@@ -62,11 +62,18 @@ re-dessiner la case à cocher.
 
 ** [* Suite de tests*] - Cochez les assertions vraies
         - Une bonne suite de tests est une suite de tests où les tests dépendent les uns des autres.
-        - Le test des cas d'erreur suffit pour tester la robustesse d'un programme.
-        + Une bonne suite de tests testent explicitement uniquement l'interface publique de l'objet testé. 
+        - Les tests des cas d'erreur suffisent pour tester la robustesse d'un programme.
+        + Une bonne suite de tests teste explicitement uniquement l'interface publique de l'objet testé. 
         + Un test en échec indique en général un bug dans le programme principal.
         + Un test en erreur indique en général un bug dans le test.
 
+** [* Simuler des collaborateurs*] - Cochez les assertions vraies
+        + Simuler des collaborateurs dans un test permet en général de limiter le coût d'exécution d'un test.
+        - On utilise des collaborateurs simulés en général dans les tests d'intégration.
+        + Il n'est pas toujours possible de créer un collaborateur simulé "à la main" pour une classe donnée.
+        - Il n'est pas possible de créer des collaborateurs simulés dans des tests en PHP.
+        + Un collaborateur simulé est communément appelé en anglais "mock object".
+        + Il existe des librairies pour créer des collaborateurs simulés dans à peu près tous les langages de programmation courants.
 
 
 
