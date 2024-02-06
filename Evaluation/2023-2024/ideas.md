@@ -31,10 +31,10 @@
 
 * Variante *
 
-Pour tester la méthode push de la classe SimpleStack, un développeur propose cela :
+Pour tester la méthode push de la classe SimpleStack, un développeur propose cela pour cadrer le développement des tests :
 ```
 //When a stack is created
 //Then an item can be pushed on top of the stack
 ```
-1. En quoi ce test n'est pas satisfaisant ?
-2. Proposer les tests unitaires pour tester de manière satisfaisante la méthode push.
+1. En quoi cette proposition de cadrage n'est pas satisfaisante ?
+2. Proposer les tests unitaires pour tester de manière satisfaisante la méthode push. On fournira que le découpage en clauses du type "Given/When/Then" sous formes de commentaires. Le code JUnit n'est pas attendu.
