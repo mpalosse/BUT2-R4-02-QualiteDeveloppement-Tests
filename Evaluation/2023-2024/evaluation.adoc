@@ -7,10 +7,10 @@
 
 ====
 * Aucun document autorisé. 
-* Partie notée sur 14 points à rendre sur copie.
+* Partie notée sur 13 points à rendre sur copie.
 ====
 
-==== Exercice 1 - Retour sur SimpleStack (7 points)
+==== Exercice 1 - Retour sur SimpleStack (6 points)
 
 Pour tester la méthode push de la classe SimpleStack, un développeur propose les commentaires suivants pour cadrer le développement des tests :
 
@@ -23,7 +23,7 @@ void testPush() {
 }
 ----
 
-1. En quoi cette proposition de cadrage n'est pas satisfaisante ? (3 points)
+1. En quoi cette proposition de cadrage n'est pas satisfaisante ? (2 points)
 2. Proposez les tests unitaires JUnit5 pour tester de manière satisfaisante la méthode push. Les méthodes de tests proposées ne doivent pas contenir le code Java. Vous fournirez pour chaque test uniquement le découpage en clauses du type "Given/When/Then" sous formes de commentaires.  (4 points)
 
 === Exercice 2 - Méthode de tri (7 points)
@@ -33,7 +33,8 @@ void testPush() {
 ----
 /**
  *  Méthode prenant en entrée une liste d'entiers et 
- *  retournant une nouvelle liste correspondant à la liste *  triée par ordre croissant
+ *  retournant une nouvelle liste correspondant à la liste 
+ *  triée par ordre croissant
  *
  * @param listeEntiers la liste à trier
  *
